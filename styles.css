@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    text-transform: uppercase;
+    font-family: "Oswald", serif;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #f8f9fa;
+  
+}
+
+/* Custom CSS Styles */
+/*hero section*/
+.hero-section {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://source.unsplash.com/random/1920x1080') center/cover; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 96px;
+}
+
+.hero{
+    height: 50vh;
+    color: white;
+    display: flex;
+    /*  */
+    align-items: center;
+    
+}
+
+.hero-text{
+    font: 18px;
+}
+
+.designer-text{
+    color: #00ADB5;
+    
+}
+
+.hero-text {
+    margin-top: 50px;
+    font-size: 18px; /* Ensures text size is 18px */
+}
+
+.hero-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-items li {
+    display: inline-block;
+}
+
+.recent-items a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background: #222;
+    transition: 0.3s ease-in-out;
+}
+
+.recent-items a:hover {
+    background: #00c2ff;
+    color: #000;
+}
+
+/*hero section*/
+
+body{
+    background-color: #1E1E1E;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border: 2px solid white;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.creative-text {
+    font-size: 96px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.designer-text {
+    font-size: 96px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-top: -15px;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+}
+
+.project-card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cta-section {
+    background: #1a1a1a;
+    color: white;
+    padding: 80px 0;
+}
+
+/* about part */
+
+.py5{
+    /* padding: 260px 0px ; */
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 325px; */
+}
+.py5-items{
+    display: flex;
+    align-items: center;
+}
+
+/* Container to hold the images */
+.image-container {
+    position: relative; /* Makes the container a reference point for absolute positioning */
+    width: 500px; /* Set the width of the container */
+    height: 500px; /* Set the height of the container */
+}
+
+/* Base styling for both images */
+.image1, .image2 {
+    position: absolute; /* Allows images to overlap */
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Position the first image */
+.image1 {
+    top: 0;
+    left: 0;
+    z-index: 1; /* Lower z-index means it will be behind */
+}
+
+/* Position the second image */
+.image2 {
+    top: 50px; /* Adjust to control overlap */
+    left: 50px; /* Adjust to control overlap */
+    z-index: 2; /* Higher z-index means it will be on top */
+}
+
+/* about part end */
+
+/*nav bar*/
+.nav-link {
+    color: #f8f9fa !important;
+    font-weight: 200;
+    margin: 0 18px;
+    transition: color 0.3s;
+    
+}
+
+.navbar-brand{
+    color: #f8f9fa !important;
+    /* margin: 0 15px; */
+    font-size: 24px;
+    border: none;
+    outline: none;
+}
+
+.nav-link:hover {
+    color: #00ADB5 !important;
+}
+
+/* navbar end*/
+
+/*recent work*/
+
+.recent-work{
+    background-image: url('/img/doodle\ items.png');
+}
+
+.recent-work {
+    background: #0D0F1A;
+    padding: 60px 0;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.recent-items {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-items li {
+    display: inline-block;
+}
+
+.recent-items a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background: #222;
+    transition: 0.3s ease-in-out;
+}
+
+.recent-items a:hover, .recent-items .active a {
+    background: #00ADB5;
+    color: #000;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/*recent work*/
+
+/*footer*/
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-nav {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #ff6347; /* Change to your preferred hover color */
+}
+
+.legal-links {
+    margin-bottom: 10px;
+}
+
+.legal-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+    color: #ff6347; /* Change to your preferred hover color */
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+}
+/*footer*/
+
+@media (max-width: 768px) {
+    .creative-text {
+        font-size: 2.5rem;
+    }
+    
+    .designer-text {
+        font-size: 1.75rem;
+    }
+    
+    .section-heading {
+        font-size: 2rem;
+    }
+}
